@@ -29,11 +29,14 @@
       animation: fadeIn 1s ease-in-out;
     }
 
-    header img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+header img {
+  width: 100%;
+  max-height: 200px; /* ou outro valor menor que desejar */
+  height: auto;
+  object-fit: cover; /* garante que a imagem se ajuste bem */
+  display: block;
+}
+
 
     nav {
       background-color: #002244;
