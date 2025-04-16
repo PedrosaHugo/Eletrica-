@@ -3,223 +3,156 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Eletricista Profissional</title>
+  <title>Hugo Pedrosa | Eletricista</title>
 
-  <!-- Metadados para SEO -->
-  <meta name="description" content="Eletricista Profissional, especializado em instalações e manutenções elétricas residenciais e comerciais com segurança e confiança. Atendemos em Belo Horizonte e arredores.">
-  <meta name="keywords" content="eletricista, elétrica, serviços de elétrica, instalações elétricas, manutenções elétricas, eletricista Belo Horizonte, Hugo Pedrosa elétrica">
-  <meta name="robots" content="index, follow">
+  <meta name="description" content="Hugo Pedrosa - Eletricista profissional. Instalações e manutenções elétricas com segurança e confiança.">
+  <meta name="keywords" content="eletricista, elétrica, instalações, manutenções, Belo Horizonte, Hugo Pedrosa">
   <meta name="author" content="Hugo Pedrosa">
-  <link rel="canonical" href="https://pedrosahugo.github.io/Eletrica-/">
 
-  <!-- Metadados para redes sociais -->
-  <meta property="og:title" content="Eletricista Profissional - Hugo Pedrosa">
-  <meta property="og:description" content="Instalações e manutenções elétricas com segurança e qualidade. Fale com Hugo Pedrosa Elétrica para mais informações.">
-  <meta property="og:url" content="https://pedrosahugo.github.io/Eletrica-/">
-  <meta property="og:type" content="website">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #000000;
-      color: #ffffff;
-      line-height: 1.6;
-      scroll-behavior: smooth;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      line-height: 1.5;
     }
 
     header {
-      background-color: #FFD700;
+      background: #FFD700;
+      color: #000;
       text-align: center;
-      color: #000000;
-      padding: 20px 10px;
-      animation: fadeIn 1s ease-in-out;
+      padding: 10px;
     }
 
     header img {
-      width: 100%;
-      max-height: 200px;
-      height: auto;
-      object-fit: cover;
+      max-height: 120px;
+      width: auto;
     }
 
     nav {
-      background-color: #000000;
+      background: #111;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
-      padding: 15px;
+      gap: 15px;
+      padding: 10px 0;
       position: sticky;
       top: 0;
-      z-index: 999;
+      z-index: 10;
     }
 
     nav a {
-      color: #ffffff;
+      color: #FFD700;
       text-decoration: none;
       font-weight: bold;
-      padding: 8px 12px;
-      border-radius: 5px;
-      transition: all 0.3s ease;
-      border: 2px solid #FFD700;
-    }
-
-    nav a:hover {
-      background-color: #FFD700;
-      color: #000000;
-      transform: scale(1.05);
     }
 
     main {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 20px;
-      background-color: #1a1a1a;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
-      animation: fadeIn 1.2s ease-in-out;
-    }
-
-    section {
-      margin-bottom: 40px;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 15px;
     }
 
     h2 {
-      color: #ffffff;
-      border-left: 5px solid #FFD700;
-      padding-left: 10px;
+      color: #FFD700;
       margin-bottom: 10px;
     }
 
-    p {
-      margin-bottom: 10px;
-      font-size: 1rem;
+    section {
+      margin-bottom: 30px;
     }
 
     ul {
       padding-left: 20px;
-      list-style-type: '✓ ';
+      list-style-type: disc;
     }
 
-    .contato p {
-      margin: 5px 0;
-    }
-
-    .botoes-contato {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      margin-top: 20px;
-    }
-
-    .botao-wpp, .botao-orcamento {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 12px 20px;
-      background-color: #FFD700;
-      color: #000000;
-      font-weight: bold;
+    .botoes-contato a {
+      display: block;
+      margin: 10px 0;
+      background: #FFD700;
+      color: #000;
+      padding: 10px;
+      text-align: center;
       text-decoration: none;
       border-radius: 5px;
-      transition: background-color 0.3s, transform 0.3s;
-      font-size: 1rem;
+      font-weight: bold;
     }
 
-    .botao-wpp i, .botao-orcamento i {
-      margin-right: 10px;
-      font-size: 18px;
-    }
-
-    .botao-wpp:hover, .botao-orcamento:hover {
-      background-color: #e6c200;
-      transform: scale(1.05);
+    .wpp-fixo {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50%;
+      font-size: 22px;
+      z-index: 1000;
+      box-shadow: 0 0 10px #000;
     }
 
     footer {
-      background-color: #FFD700;
-      color: #000000;
+      background: #111;
+      color: #aaa;
       text-align: center;
       padding: 15px;
-      margin-top: 40px;
       font-size: 0.9rem;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-      }
-
-      main {
-        margin: 20px 10px;
-        padding: 15px;
-      }
-
-      .botao-wpp, .botao-orcamento {
-        width: 100%;
-        font-size: 1.1rem;
-      }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="imagens/logo.png" alt="Logo do Eletricista Profissional">
-    <h1>Eletricista Profissional</h1>
-    <p>Instalações e manutenções com segurança e confiança</p>
+    <img src="imagens/logo.png" alt="Logo do Eletricista">
+    <h1>Hugo Pedrosa | Eletricista</h1>
+    <p>Serviços elétricos residenciais e comerciais</p>
   </header>
 
   <nav>
-    <a href="index.html">Home</a>
-    <a href="servicos.html">Serviços</a>
+    <a href="#home">Home</a>
     <a href="#sobre">Sobre</a>
     <a href="#contato">Contato</a>
   </nav>
 
   <main>
     <section id="home">
-      <h2>Bem-vindo!</h2>
-      <p>Sou eletricista especializado em instalações, manutenções e reparos elétricos residenciais e comerciais. Atendo com rapidez, segurança e preço justo.</p>
+      <h2>Bem-vindo</h2>
+      <p>Atuo com seriedade e qualidade em instalações, manutenções e reparos elétricos. Atendimento rápido, seguro e com preço justo.</p>
     </section>
 
     <section id="sobre">
       <h2>Sobre mim</h2>
-      <p>Tenho mais de 10 anos de experiência como eletricista, trabalhando com responsabilidade e compromisso. Atendo na região de Belo Horizonte e arredores.</p>
+      <p>Sou eletricista com mais de 10 anos de experiência. Atendo Belo Horizonte e região com comprometimento e segurança.</p>
     </section>
 
-    <section id="contato" class="contato">
+    <section id="contato">
       <h2>Contato</h2>
       <p>WhatsApp: (21) 99999-9999</p>
-      <p>E-mail: eletricista@exemplo.com</p>
-
+      <p>Email: eletricista@exemplo.com</p>
       <div class="botoes-contato">
-        <a class="botao-wpp" href="https://wa.me/5521996677675" target="_blank">
-          <i class="fab fa-whatsapp"></i> Fale comigo no WhatsApp
+        <a href="https://wa.me/5521996677675" target="_blank">
+          <i class="fab fa-whatsapp"></i> Falar no WhatsApp
         </a>
-        <a class="botao-orcamento" href="https://wa.me/5521996677675?text=Olá%20Hugo%2C%20gostaria%20de%20um%20orçamento." target="_blank">
+        <a href="https://wa.me/5521996677675?text=Olá%20Hugo%2C%20gostaria%20de%20um%20orçamento." target="_blank">
           <i class="fas fa-clipboard-list"></i> Solicitar Orçamento
         </a>
       </div>
     </section>
   </main>
 
+  <a href="https://wa.me/5521996677675" class="wpp-fixo" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
   <footer>
-    <p>&copy; 2025 Eletricista Profissional. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Hugo Pedrosa. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
