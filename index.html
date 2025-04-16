@@ -3,70 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hugo Pedrosa | Eletricista</title>
+  <title>Serviços | Hugo Pedrosa</title>
 
-  <meta name="description" content="Hugo Pedrosa - Eletricista profissional. Instalações e manutenções elétricas com segurança e confiança.">
-  <meta name="keywords" content="eletricista, elétrica, instalações, manutenções, Belo Horizonte, Hugo Pedrosa">
+  <meta name="description" content="Serviços oferecidos por Hugo Pedrosa - Eletricista. Veja tabela de preços e soluções elétricas.">
   <meta name="author" content="Hugo Pedrosa">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
       font-family: Arial, sans-serif;
       background: #000;
       color: #fff;
-      line-height: 1.5;
+      margin: 0;
+      padding: 0;
     }
 
-    header {
+    header, footer {
       background: #FFD700;
       color: #000;
       text-align: center;
-      padding: 10px;
-    }
-
-    header img {
-      max-height: 120px;
-      width: auto;
-    }
-
-    nav {
-      background: #111;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      padding: 10px 0;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav a {
-      color: #FFD700;
-      text-decoration: none;
-      font-weight: bold;
+      padding: 15px;
     }
 
     main {
       max-width: 800px;
       margin: 20px auto;
-      padding: 0 15px;
+      padding: 15px;
     }
 
-    h2 {
+    h1 {
       color: #FFD700;
-      margin-bottom: 10px;
-    }
-
-    section {
-      margin-bottom: 30px;
     }
 
     ul {
@@ -74,82 +41,53 @@
       list-style-type: disc;
     }
 
-    .botoes-contato a {
+    .imagem-precos {
       display: block;
-      margin: 10px 0;
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+      border: 2px solid #FFD700;
+      border-radius: 10px;
+    }
+
+    .voltar {
+      display: inline-block;
+      margin-top: 20px;
       background: #FFD700;
       color: #000;
-      padding: 10px;
-      text-align: center;
-      text-decoration: none;
+      padding: 10px 15px;
       border-radius: 5px;
+      text-decoration: none;
       font-weight: bold;
     }
 
-    .wpp-fixo {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25d366;
-      color: white;
-      padding: 12px 16px;
-      border-radius: 50%;
-      font-size: 22px;
-      z-index: 1000;
-      box-shadow: 0 0 10px #000;
-    }
-
-    footer {
-      background: #111;
-      color: #aaa;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9rem;
+    .voltar:hover {
+      background: #e6c200;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="imagens/logo.png" alt="Logo do Eletricista">
-    <h1>Hugo Pedrosa | Eletricista</h1>
-    <p>Serviços elétricos residenciais e comerciais</p>
+    <h1>Serviços Oferecidos</h1>
   </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#contato">Contato</a>
-  </nav>
-
   <main>
-    <section id="home">
-      <h2>Bem-vindo</h2>
-      <p>Atuo com seriedade e qualidade em instalações, manutenções e reparos elétricos. Atendimento rápido, seguro e com preço justo.</p>
-    </section>
+    <p>Confira abaixo os principais serviços que ofereço como eletricista profissional:</p>
 
-    <section id="sobre">
-      <h2>Sobre mim</h2>
-      <p>Sou eletricista com mais de 10 anos de experiência. Atendo Belo Horizonte e região com comprometimento e segurança.</p>
-    </section>
+    <ul>
+      <li>Instalações elétricas residenciais e comerciais</li>
+      <li>Manutenção e reparo em fiação</li>
+      <li>Instalação de quadros de disjuntores</li>
+      <li>Troca de tomadas, interruptores e luminárias</li>
+      <li>Instalação de ventiladores e chuveiros</li>
+      <li>Identificação e solução de curtos e quedas</li>
+    </ul>
 
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>WhatsApp: (21) 99999-9999</p>
-      <p>Email: eletricista@exemplo.com</p>
-      <div class="botoes-contato">
-        <a href="https://wa.me/5521996677675" target="_blank">
-          <i class="fab fa-whatsapp"></i> Falar no WhatsApp
-        </a>
-        <a href="https://wa.me/5521996677675?text=Olá%20Hugo%2C%20gostaria%20de%20um%20orçamento." target="_blank">
-          <i class="fas fa-clipboard-list"></i> Solicitar Orçamento
-        </a>
-      </div>
-    </section>
+    <h2 style="color:#FFD700; margin-top:30px;">Tabela de Preços</h2>
+    <img src="imagens/tabela_precos.png" alt="Tabela de preços dos serviços elétricos" class="imagem-precos">
+
+    <a href="index.html" class="voltar"><i class="fas fa-arrow-left"></i> Voltar para o início</a>
   </main>
-
-  <a href="https://wa.me/5521996677675" class="wpp-fixo" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
 
   <footer>
     <p>&copy; 2025 Hugo Pedrosa. Todos os direitos reservados.</p>
