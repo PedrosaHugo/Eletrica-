@@ -3,109 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Serviços</title>
+  <title>Serviços | Hugo Pedrosa</title>
+
+  <meta name="description" content="Serviços oferecidos por Hugo Pedrosa - Eletricista. Veja tabela de preços e soluções elétricas.">
+  <meta name="author" content="Hugo Pedrosa">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
   <style>
     body {
-      background-color: #121212;
-      color: #f5f5f5;
       font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
       margin: 0;
       padding: 0;
-      scroll-behavior: smooth;
     }
 
-    header {
-      background-color: #004d99;
-      color: white;
+    header, footer {
+      background: #FFD700;
+      color: #000;
       text-align: center;
-      padding: 20px;
-      animation: fadeIn 1s ease;
-    }
-
-    nav {
-      background-color: #002244;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
       padding: 15px;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 8px 12px;
-      border-radius: 5px;
-      transition: all 0.3s ease;
-    }
-
-    nav a:hover {
-      background-color: #005bb5;
-      transform: scale(1.05);
     }
 
     main {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 20px;
-      background-color: #1f1f1f;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
-      animation: fadeIn 1.2s ease;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 15px;
     }
 
-    h2 {
-      color: #4da3ff;
-      border-left: 5px solid #4da3ff;
-      padding-left: 10px;
+    h1 {
+      color: #FFD700;
     }
 
-    img {
+    ul {
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+
+    .imagem-precos {
+      display: block;
       max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+      border: 2px solid #FFD700;
       border-radius: 10px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.2);
-      margin-top: 20px;
     }
 
-    a.voltar {
+    .voltar {
       display: inline-block;
       margin-top: 20px;
-      color: #4da3ff;
+      background: #FFD700;
+      color: #000;
+      padding: 10px 15px;
+      border-radius: 5px;
       text-decoration: none;
-      transition: 0.3s;
+      font-weight: bold;
     }
 
-    a.voltar:hover {
-      text-decoration: underline;
-      transform: translateX(-5px);
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .voltar:hover {
+      background: #e6c200;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Serviços</h1>
+    <h1>Serviços Oferecidos</h1>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="servicos.html">Serviços</a>
-    <a href="index.html#sobre">Sobre</a>
-    <a href="index.html#contato">Contato</a>
-  </nav>
-
   <main>
-    <h2>Tabela de Preços</h2>
-    <img src="imagens/tabela_precos.png" alt="Tabela de Preços">
-    <a href="index.html" class="voltar">← Voltar à Página Principal</a>
+    <p>Confira abaixo os principais serviços que ofereço como eletricista profissional:</p>
+
+    <ul>
+      <li>Instalações elétricas residenciais e comerciais</li>
+      <li>Manutenção e reparo em fiação</li>
+      <li>Instalação de quadros de disjuntores</li>
+      <li>Troca de tomadas, interruptores e luminárias</li>
+      <li>Instalação de ventiladores e chuveiros</li>
+      <li>Identificação e solução de curtos e quedas</li>
+    </ul>
+
+    <h2 style="color:#FFD700; margin-top:30px;">Tabela de Preços</h2>
+    <img src="imagens/tabela_precos.png" alt="Tabela de preços dos serviços elétricos" class="imagem-precos">
+
+    <a href="index.html" class="voltar"><i class="fas fa-arrow-left"></i> Voltar para o início</a>
   </main>
+
+  <footer>
+    <p>&copy; 2025 Hugo Pedrosa. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
