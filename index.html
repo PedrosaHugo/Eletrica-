@@ -11,7 +11,7 @@
   <meta name="robots" content="index, follow">
   <meta name="author" content="Hugo Pedrosa">
   <link rel="canonical" href="https://pedrosahugo.github.io/Eletrica-/">
-
+  
   <!-- Metadados para redes sociais -->
   <meta property="og:title" content="Eletricista Profissional - Hugo Pedrosa">
   <meta property="og:description" content="Instalações e manutenções elétricas com segurança e qualidade. Fale com Hugo Pedrosa Elétrica para mais informações.">
@@ -23,23 +23,23 @@
   <style>
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
     }
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #000000;
-      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #000000;
+    
       line-height: 1.6;
       scroll-behavior: smooth;
     }
 
     header {
-      background-color: #FFD700;
+      background-color: #004d99;
       text-align: center;
-      color: #000000;
-      padding: 20px 10px;
+      color: white;
       animation: fadeIn 1s ease-in-out;
     }
 
@@ -48,14 +48,15 @@
       max-height: 200px;
       height: auto;
       object-fit: cover;
+      display: block;
     }
 
     nav {
-      background-color: #000000;
+      background-color: #002244;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
+      flex-wrap: wrap;
+      gap: 30px;
       padding: 15px;
       position: sticky;
       top: 0;
@@ -63,18 +64,16 @@
     }
 
     nav a {
-      color: #ffffff;
+      color: white;
       text-decoration: none;
       font-weight: bold;
       padding: 8px 12px;
       border-radius: 5px;
       transition: all 0.3s ease;
-      border: 2px solid #FFD700;
     }
 
     nav a:hover {
-      background-color: #FFD700;
-      color: #000000;
+      background-color: #005bb5;
       transform: scale(1.05);
     }
 
@@ -82,9 +81,9 @@
       max-width: 900px;
       margin: 30px auto;
       padding: 20px;
-      background-color: #1a1a1a;
+      background-color: #1f1f1f;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
       animation: fadeIn 1.2s ease-in-out;
     }
 
@@ -93,15 +92,9 @@
     }
 
     h2 {
-      color: #ffffff;
-      border-left: 5px solid #FFD700;
+      color: #000000;
+      border-left: 5px solid #4da3ff;
       padding-left: 10px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      margin-bottom: 10px;
-      font-size: 1rem;
     }
 
     ul {
@@ -113,71 +106,48 @@
       margin: 5px 0;
     }
 
-    .botoes-contato {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      margin-top: 20px;
-    }
-
-    .botao-wpp, .botao-orcamento {
+    .botao-wpp {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
+      margin-top: 15px;
       padding: 12px 20px;
-      background-color: #FFD700;
-      color: #000000;
+      background-color: #25D366;
+      color: white;
       font-weight: bold;
       text-decoration: none;
       border-radius: 5px;
       transition: background-color 0.3s, transform 0.3s;
-      font-size: 1rem;
     }
 
-    .botao-wpp i, .botao-orcamento i {
+    .botao-wpp i {
       margin-right: 10px;
       font-size: 18px;
     }
 
-    .botao-wpp:hover, .botao-orcamento:hover {
-      background-color: #e6c200;
+    .botao-wpp:hover {
+      background-color: #1ebe5d;
       transform: scale(1.05);
     }
 
     footer {
-      background-color: #FFD700;
-      color: #000000;
+      background-color: #004d99;
+      color: white;
       text-align: center;
       padding: 15px;
       margin-top: 40px;
-      font-size: 0.9rem;
     }
 
+    /* Animação de entrada */
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-      }
-
-      main {
-        margin: 20px 10px;
-        padding: 15px;
-      }
-
-      .botao-wpp, .botao-orcamento {
-        width: 100%;
-        font-size: 1.1rem;
-      }
-    }
   </style>
 </head>
 <body>
+  <!-- Música de fundo -->
+  <iframe width="0" height="0" src="https://www.youtube.com/embed/O7k8g_g8uxM?autoplay=1&loop=1&playlist=O7k8g_g8uxM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
   <header>
     <img src="imagens/logo.png" alt="Logo do Eletricista Profissional">
     <h1>Eletricista Profissional</h1>
@@ -207,14 +177,9 @@
       <p>WhatsApp: (21) 99999-9999</p>
       <p>E-mail: eletricista@exemplo.com</p>
 
-      <div class="botoes-contato">
-        <a class="botao-wpp" href="https://wa.me/5521996677675" target="_blank">
-          <i class="fab fa-whatsapp"></i> Fale comigo no WhatsApp
-        </a>
-        <a class="botao-orcamento" href="https://wa.me/5521996677675?text=Olá%20Hugo%2C%20gostaria%20de%20um%20orçamento." target="_blank">
-          <i class="fas fa-clipboard-list"></i> Solicitar Orçamento
-        </a>
-      </div>
+      <a class="botao-wpp" href="https://wa.me/5521996677675" target="_blank">
+        <i class="fab fa-whatsapp"></i> Fale comigo pelo WhatsApp
+      </a>
     </section>
   </main>
 
